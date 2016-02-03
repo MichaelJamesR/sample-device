@@ -1,0 +1,10 @@
+﻿<div ng-controller="SnapshotExpandingCtrl as snapshot">
+  <sdev-snapshot-header></sdev-snapshot-header>
+
+  <div dx-start-with="snapshot.data">
+    <div ng-repeat="deviceData in $dxPrior" ng-controller="SnapshotDeviceCtrl as device">
+      <sdev-snapshot-device></sdev-snapshot-device>
+      <div class="child-device" ng-if="device.children && device.hasBeenSelected" ng-show="device.isSelected" dx-connect="device.children"></div>
+    </div>
+  </div>
+</div>

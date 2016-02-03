@@ -1,0 +1,67 @@
+body {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+button:active, .button:active, button:focus, .button:focus, button:hover, .button:hover {
+    outline: none !important;
+}
+
+.nav>li.disabled>a:hover, .nav>li.disabled>a:focus {
+    cursor: auto !important;
+}
+
+h3.equal-margins {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h4.device-sub-text {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.device-meta {
+    max-width: 412px;
+    float: left;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.device-history {
+    max-width: 412px;
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.margin-indent {
+    margin: 10px;
+}
+
+.no-bottom-margin {
+    margin-bottom: 0;
+}
+
+.child-device {
+    position: relative;
+    left: 4%;
+    width: 96%;
+}
+
+.loading-symbol {
+    width: 50px;
+    height: 50px;
+}
+
+.loading-symbol-in-alert {
+    position: relative;
+    top: -15px;
+    left: -7px;
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+

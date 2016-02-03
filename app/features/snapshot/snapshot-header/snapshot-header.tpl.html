@@ -1,0 +1,45 @@
+﻿<div ng-controller="SnapshotHeaderCtrl as header">
+  <nav class="navbar navbar-default no-bottom-margin" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <!--TODO: this collapses, but seems to have no other functionality-->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="">Snapshot</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <form class="navbar-form">
+          <div class="input-group" role="search">
+            <span class="input-group-addon">
+              <span class="glyphicon glyphicon-search"></span>
+            </span>
+            <input type="text" class="form-control" placeholder="Search" ng-model="snapshot.searchFilter">
+          </div>
+
+          <button type="button" class="btn btn-default" ng-click="snapshot.toggleAddItemForm()" ng-class="{active: snapshot.addItemFormShown, disabled: snapshot.getStatus()}">
+            <span class="glyphicon glyphicon-plus"></span> Add Item
+          </button>
+        </form>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <section class="margin-indent" ng-show="snapshot.addItemFormShown">
+    <div>
+      Adding Item... (just kidding, this isn't implemented)
+      <!--TODO add form-->
+    </div>
+  </section>
+
+  <div class="alert margin-indent" role="alert" ng-show="snapshot.hasStatus()" ng-class="snapshot.getStatus().class">
+    <div sdev-loading-animation animation-index="header.getSelectedLoadingAnimation()" class="loading-symbol-in-alert" ng-if="snapshot.statusIsLoading()"></div>
+    <b>{{snapshot.getStatus().messageBold}}</b>{{snapshot.getStatus().message}}
+  </div>
+</div>

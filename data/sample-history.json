@@ -1,0 +1,47 @@
+{"devices": [
+    {
+        "path": "sampleCloud/US-West/Node-A/Server001/Uptime",
+        "history": [
+            {
+                "value": 10485,
+                "timestamp": "2016-02-03 18:41:07"
+            },
+            {
+                "value": 10480,
+                "timestamp": "2016-02-03 18:41:02"
+            },
+            {
+                "value": 10475,
+                "timestamp": "2016-02-03 18:40:57"
+            },
+            {
+                "value": 10470,
+                "timestamp": "2016-02-03 18:40:52"
+            },
+            {
+                "value": 10465,
+                "timestamp": "2016-02-03 18:40:47"
+            }
+        ]
+    },
+    {
+        "path": "sampleCloud/US-West/Node-A/Server001/Health",
+        "history": [
+            {
+                "value": 0,
+                "displayed_value": "OK",
+                "timestamp": "2016-02-03 17:24:33"
+            },
+            {
+                "value": 1,
+                "displayed_value": "ERROR",
+                "timestamp": "2016-02-03 17:22:58"
+            },
+            {
+                "value": 0,
+                "displayed_value": "OK",
+                "timestamp": "2016-02-03 15:46:23"
+            }
+        ]
+    }
+]}

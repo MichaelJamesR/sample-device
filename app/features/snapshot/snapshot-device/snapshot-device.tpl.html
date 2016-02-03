@@ -1,0 +1,24 @@
+﻿<section>
+  <a href="" class="list-group-item" ng-click="device.click()" ng-class="{'panel-primary': device.isSelected}">
+    <h3 class="equal-margins">{{device.displayedTitle}}</h3>
+
+    <h4 class="device-sub-text" ng-show="device.hasReading()"><em>Latest Reading: </em><em class="pull-right">{{device.getReadingDetails()}}</em></h4>
+
+    <div class="panel panel-info margin-indent device-meta" ng-show="device.isSelected && device.meta">
+      <div class="panel-body">
+        <span ng-repeat="(key,value) in device.meta">
+          <b>{{key}}: </b>{{value}}<br>
+        </span>
+      </div>
+    </div>
+
+    <div class="panel panel-info margin-indent device-history" ng-show="device.isSelected && (device.hasHistoryData() || device.historyIsLoading)">
+      <div class="panel-body">
+        <div sdev-loading-animation animation-index="device.getSelectedLoadingAnimation()" class="loading-symbol" ng-if="device.historyIsLoading"></div>
+        <div id="{{device.graphId}}" ng-show="device.hasHistoryData()"></div>
+      </div>
+    </div>
+
+    <div class="clear"></div>
+  </a>
+</section>

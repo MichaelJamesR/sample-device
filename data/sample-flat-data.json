@@ -1,0 +1,25 @@
+{"devices": [
+    {
+        "path": "sampleCloud/US-West/Node-A/Server001/Uptime",
+        "reading": {
+            "value": 10485,
+            "timestamp": "2016-02-03 18:41:07"
+        },
+        "meta": {
+            "description": "File Server Uptime",
+            "owner": "wwallace"
+        }
+    },
+    {
+        "path": "sampleCloud/US-West/Node-A/Server001/Health",
+        "reading": {
+            "value": 0,
+            "displayed_value": "OK",
+            "timestamp": "2016-02-03 18:41:07"
+        },
+        "meta": {
+            "description": "File Server Health",
+            "owner": "wwallace"
+        }
+    }
+]}

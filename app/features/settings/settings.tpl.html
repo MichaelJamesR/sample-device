@@ -1,0 +1,30 @@
+﻿<div ng-controller="SettingsCtrl as settings">
+  <button type="button" class="btn btn-default pull-right" ng-click="settings.click()" ng-class="{active: settings.isSelected}">
+    <span class="glyphicon glyphicon-cog"></span> Settings
+  </button>
+
+  <section class="margin-indent" ng-show="settings.isSelected">
+    <div>
+      <ul class="nav nav-pills">
+        <li class="disabled"><a>Data Display:</a></li>
+        <li ng-class="{active: settings.dataDisplayIsSelected(1)}"> <a href ng-click="settings.selectDataDisplay(1)">Flat</a> </li>
+        <!--<li ng-class="{active: settings.dataDisplayIsSelected(2)}"> <a href ng-click="settings.selectDataDisplay(2)">Expanding</a> </li>--> <!--see index.html-->
+        <li ng-class="{active: settings.dataDisplayIsSelected(3)}"> <a href ng-click="settings.selectDataDisplay(3)">Tiered</a> </li>
+      </ul>
+    </div>
+
+    <div>
+      <ul class="nav nav-pills">
+        <li class="disabled"><a>Loading Animation:</a></li>
+        <li ng-class="{active: settings.loadingAnimationIsSelected(1)}"> <a href ng-click="settings.selectLoadingAnimation(1)">1</a> </li>
+        <li ng-class="{active: settings.loadingAnimationIsSelected(2)}"> <a href ng-click="settings.selectLoadingAnimation(2)">2</a> </li>
+        <li ng-class="{active: settings.loadingAnimationIsSelected(3)}"> <a href ng-click="settings.selectLoadingAnimation(3)">3</a> </li>
+        <li ng-class="{active: settings.loadingAnimationIsSelected(4)}"> <a href ng-click="settings.selectLoadingAnimation(4)">4</a> </li>
+        <li ng-class="{active: settings.loadingAnimationIsSelected(5)}"> <a href ng-click="settings.selectLoadingAnimation(5)">5</a> </li>
+        <li ng-class="{active: settings.loadingAnimationIsSelected(6)}"> <a href ng-click="settings.selectLoadingAnimation(6)">6</a> </li>
+        <li ng-class="{active: settings.loadingAnimationIsSelected(7)}"> <a href ng-click="settings.selectLoadingAnimation(7)">7</a> </li>
+        <li ng-class="{active: settings.loadingAnimationIsSelected(8)}"> <a href ng-click="settings.selectLoadingAnimation(8)">8</a> </li>
+      </ul>
+    </div>
+  </section>
+</div>

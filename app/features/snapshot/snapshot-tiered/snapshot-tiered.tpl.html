@@ -1,0 +1,21 @@
+﻿<section ng-controller="SnapshotTieredCtrl as snapshot">
+  <!-- selected item -->
+  <div class="list-group">
+    <div class="list-group-item">
+      <!-- back button -->
+      <button type="button" class="btn btn-lg btn-default" ng-click="snapshot.back()"
+              ng-disabled="snapshot.historyStack.length === 0">
+        Back
+      </button>
+
+      <h3>{{snapshot.selectedItem.path}}</h3>
+
+      <!-- children of selected item -->
+      <div class="list-group">
+        <a href class="list-group-item" ng-repeat="child in snapshot.selectedItem.children" ng-click="snapshot.select(child)">
+          <h3>{{snapshot.getName(child)}} <em class="pull-right">{{snapshot.getReadingDetails(child)}}</em></h3>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

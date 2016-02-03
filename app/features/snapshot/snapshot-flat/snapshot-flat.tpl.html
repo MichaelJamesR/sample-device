@@ -1,0 +1,11 @@
+﻿<div ng-controller="SnapshotFlatCtrl as snapshot">
+  <sdev-snapshot-header></sdev-snapshot-header>
+
+  <section>
+    <div class="list-group">
+      <div class="repeated-item" ng-repeat="deviceData in snapshot.getFilteredData()" ng-controller="SnapshotDeviceCtrl as device">
+        <sdev-snapshot-device></sdev-snapshot-device>
+      </div>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,21 @@
+﻿<section ng-controller="MainTabsCtrl as mainTab">
+  <ul class="nav nav-pills">
+    <li ng-class="{active: mainTab.isSelected(1)}"> <a href="" ng-click="mainTab.select(1)">Snapshot</a> </li>
+    <li ng-class="{active: mainTab.isSelected(2)}"> <a href="" ng-click="mainTab.select(2)">Status</a> </li>
+    <li ng-class="{active: mainTab.isSelected(3)}"> <a href="" ng-click="mainTab.select(3)">Configuration</a> </li>
+  </ul>
+
+  <div class="panel, no-bottom-margin" ng-if="mainTab.isSelected(1)">
+    <section>
+      <div sdev-snapshot-flat class="panel, no-bottom-margin" ng-if="mainTab.dataDisplayIsSelected(1)"></div>
+      <div sdev-snapshot-expanding class="panel, no-bottom-margin" ng-if="mainTab.dataDisplayIsSelected(2)"></div>
+      <div sdev-snapshot-tiered class="panel, no-bottom-margin" ng-if="mainTab.dataDisplayIsSelected(3)"></div>
+    </section>
+  </div>
+
+  <div class="panel, no-bottom-margin" ng-if="mainTab.isSelected(2)">
+  </div>
+
+  <div class="panel, no-bottom-margin" ng-if="mainTab.isSelected(3)">
+  </div>
+</section>

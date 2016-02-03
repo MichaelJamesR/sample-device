@@ -1,0 +1,68 @@
+﻿
+.animate-show-hide  {
+    opacity: 1;
+}
+
+.animate-show-hide.ng-hide-add.ng-hide-add-active,
+.animate-show-hide.ng-hide-remove.ng-hide-remove-active {
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+    transition: all linear 0.5s;
+}
+
+.animate-show-hide.ng-hide {
+    opacity: 0;
+}
+
+.repeated-item.ng-enter {
+    -webkit-transition:0.5s linear all;
+    -moz-transition:0.5s linear all;
+    -o-transition:0.5s linear all;
+    transition:0.5s linear all;
+    opacity:0;
+}
+
+/*This looks nice on first load but looks strange when using the filter*/
+.repeated-item.ng-enter-stagger {
+    -webkit-transition-delay: 0.05s;
+    -moz-transition-delay: 0.05s;
+    -o-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s;
+}
+
+.repeated-item.ng-enter.ng-enter-active {
+    opacity:1;
+}
+
+.repeated-item.ng-leave {
+    -webkit-animation:0.5s my_animation;
+    -moz-animation:0.5s my_animation;
+    -o-animation:0.5s my_animation;
+    animation:0.5s my_animation;
+}
+
+@keyframes my_animation {
+    from { opacity:1; }
+    to { opacity:0; }
+}
+
+@-webkit-keyframes my_animation {
+    from { opacity:1; }
+    to { opacity:0; }
+}
+
+@-moz-keyframes my_animation {
+    from { opacity:1; }
+    to { opacity:0; }
+}
+
+@-o-keyframes my_animation {
+    from { opacity:1; }
+    to { opacity:0; }
+}
+

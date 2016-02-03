@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app="sampleDevice">
+<head>
+  <title>Sample Device</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="../vendor/rickshaw/src/css/graph.css">
+  <link rel="stylesheet" href="../vendor/rickshaw/src/css/detail.css">
+  <link rel="stylesheet" href="../vendor/rickshaw/src/css/legend.css">
+  <link rel="stylesheet" href="../vendor/rickshaw/rickshaw.min.css">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="app-animations.css">
+</head>
+
+<body>
+  <header>
+    <h1 class="text-center">Sample Device</h1>
+  </header>
+
+  <sdev-settings></sdev-settings>
+
+  <sdev-main-tabs></sdev-main-tabs>
+
+  <!-- vendor -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.5/angular.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.5/angular-animate.min.js"></script>
+  <!--<script type="text/javascript" src="../vendor/angular-hint/hint.js"></script>--> <!-- this might be worth trying to get working - might need to be built with npm or something https://github.com/angular/angular-hint -->
+  <!--<script type="text/javascript" src="../vendor/dotjem-angular-tree/dotjem-angular-tree.js"></script>--> <!-- does not work for latest version of angular: only works for angular v1.2.16 to v1.3.0-beta.19 -->
+  <script type="text/javascript" src="../vendor/leverone-uuid/uuid.min.js"></script>
+  <script type="text/javascript" src="../vendor/moment/min/moment.min.js"></script>
+  <script type="text/javascript" src="../vendor/rickshaw/vendor/d3.v3.js"></script>
+  <script type="text/javascript" src="../vendor/rickshaw/rickshaw.min.js"></script>
+  <!-- local -->
+  <script type="text/javascript" src="components/svg-animation/svg-animation.mod.js"></script>
+  <script type="text/javascript" src="components/svg-animation/svg-animation.ctrl.js"></script>
+  <script type="text/javascript" src="components/loading-animation/loading-animation.mod.js"></script>
+  <script type="text/javascript" src="components/loading-animation/loading-animation.dir.js"></script>
+  <script type="text/javascript" src="components/loading-animation/loading-animation-1/loading-animation-1.dir.js"></script>
+  <script type="text/javascript" src="components/loading-animation/loading-animation-2/loading-animation-2.dir.js"></script>
+  <script type="text/javascript" src="components/loading-animation/loading-animation-3/loading-animation-3.dir.js"></script>
+  <script type="text/javascript" src="components/loading-animation/loading-animation-4/loading-animation-4.dir.js"></script>
+  <script type="text/javascript" src="components/loading-animation/loading-animation-5/loading-animation-5.dir.js"></script>
+  <script type="text/javascript" src="components/loading-animation/loading-animation-6/loading-animation-6.dir.js"></script>
+  <script type="text/javascript" src="components/loading-animation/loading-animation-7/loading-animation-7.dir.js"></script>
+  <script type="text/javascript" src="components/loading-animation/loading-animation-8/loading-animation-8.dir.js"></script>
+  <script type="text/javascript" src="features/snapshot/snapshot.mod.js"></script>
+  <script type="text/javascript" src="features/snapshot/snapshot.svc.js"></script>
+  <script type="text/javascript" src="features/snapshot/snapshot-device/snapshot-device.ctrl.js"></script>
+  <script type="text/javascript" src="features/snapshot/snapshot-device/snapshot-device.dir.js"></script>
+  <script type="text/javascript" src="features/snapshot/snapshot-expanding/snapshot-expanding.ctrl.js"></script>
+  <script type="text/javascript" src="features/snapshot/snapshot-expanding/snapshot-expanding.dir.js"></script>
+  <script type="text/javascript" src="features/snapshot/snapshot-flat/snapshot-flat.ctrl.js"></script>
+  <script type="text/javascript" src="features/snapshot/snapshot-flat/snapshot-flat.dir.js"></script>
+  <script type="text/javascript" src="features/snapshot/snapshot-header/snapshot-header.ctrl.js"></script>
+  <script type="text/javascript" src="features/snapshot/snapshot-header/snapshot-header.dir.js"></script>
+  <script type="text/javascript" src="features/snapshot/snapshot-tiered/snapshot-tiered.ctrl.js"></script>
+  <script type="text/javascript" src="features/snapshot/snapshot-tiered/snapshot-tiered.dir.js"></script>
+  <script type="text/javascript" src="features/main-tabs/main-tabs.mod.js"></script>
+  <script type="text/javascript" src="features/main-tabs/main-tabs.ctrl.js"></script>
+  <script type="text/javascript" src="features/main-tabs/main-tabs.dir.js"></script>
+  <script type="text/javascript" src="features/settings/settings.mod.js"></script>
+  <script type="text/javascript" src="features/settings/settings.ctrl.js"></script>
+  <script type="text/javascript" src="features/settings/settings.dir.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
